@@ -5,6 +5,47 @@
     <link href = style/style.css type = "text/css" rel = "stylesheet">
   </head>
   <body>
-    
+   
+    <div class = "header text">
+      <h1 id = "haha"> FIGHT! </h1>
+      <br>
+    </div>
+    <div class = "text">
+      <h2> Best of 21 </h2>
+      <br>
+      <h2> Pick your choice </h2>
+    </div>
+    <div class = "button">
+      <img src = images/rock.jpg class = "symbol" id = "rock">
+      <img src = images/paper.jpg class = "symbol" id = "paper">
+      <img src = images/scissors.jpg class = "symbol" id = "scissors">
+    </div>
+    <!-- ini buat kalimat kalo menang/kalah nya -->
+    <div class = "text">
+      <h2 id = "result"> </h2>
+    </div>
+    <!-- ini nanti harus pasang tabel buat score -->
+    <br>
+    <div class = "score">
+      <div class = "title yours">
+        <p> Your Score </p>
+      </div>
+      <div class = "title opponent">
+        <p> Your Opponent's Score </p>
+      </div>
+      <div class = "title draw">
+        <p> Number of Draws </p>
+      </div>
+      <div class = "content yours">
+        <p id = "myscore"> 0 </p>
+      </div>
+      <div class = "content opponent">
+        <p id = "oppscore"> 0 </p>
+      </div>
+      <div class = "content draw">
+        <p id = "drawscore"> 0 </p>
+      </div>
+    </div>
+    <script src="script/script.js"></script>
   </body>
 </html>
