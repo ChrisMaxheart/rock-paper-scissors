@@ -12,6 +12,10 @@
   justify-self: center;
 }
 
+.symbol:hover{
+  opacity: 0.2;
+}
+
 .text{
   align-self: center;
   justify-self: center;
