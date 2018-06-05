@@ -1,7 +1,9 @@
+// Tantangan: bagaimana cara mengubah kode Anda sehingga game Anda easily extensible ke rps-101? http://retrohelix.com/en/wp-content/uploads/2013/08/rps-101.jpg
 function computerPlay(rockCounter, paperCounter, scissorsCounter) {
   let a = rockCounter;
   let b = paperCounter;
   let c = scissorsCounter;
+  // Spacing. Dan selalu gunakan triple equals ===
   if (a+b+c == 0) {
     return "paper";
   }
@@ -50,6 +52,7 @@ function start(rockCounter, paperCounter, scissorsCounter) {
 
 
 function clicks(choose) {
+  // Please use better variable names, CP jangan dibawa ke sini
   let com = computerPlay(a, b, c);
   let res = playRound(choose, com);
   let msg = document.getElementById("result");
@@ -85,9 +88,12 @@ function clicks(choose) {
 
 
 
+// document.onload harusnya sebuah _function_. Jadi yang benar adalah
+// document.onload = function() { start(0, 0, 0); };
 document.onload = start(0, 0, 0);
 
 
+// Gunakan for loop
 let rck = document.getElementById("rock");
 rck.addEventListener('click', function() {clicks("rock")});
 

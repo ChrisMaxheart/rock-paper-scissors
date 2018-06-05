@@ -8,11 +8,14 @@
   width: 90%;
   grid-column-gap: 50px;
   height: 100%;
+  /* Spacing */
   align-self : center;
   justify-self: center;
 }
 
+/* Perhatikan styling, gunakan spasi sebelum tanda { */
 .symbol:hover{
+  /* Mungkin 0.2 terlalu kecil */
   opacity: 0.2;
 }
 
